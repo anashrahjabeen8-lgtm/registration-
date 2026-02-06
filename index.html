@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="form-wrapper">
+        <h2>Student Registration Form</h2>
+
+        <form>
+
+            <div class="form-row">
+                <label>Roll No</label>
+                <input type="text">
+            </div>
+
+            <div class="form-row">
+                <label>Student Name</label>
+                <div class="inline">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label>Father's Name</label>
+                <input type="text">
+            </div>
+
+            <div class="form-row">
+                <label>Date of Birth</label>
+                <div class="inline small">
+                    <input type="text" placeholder="DD">
+                    <input type="text" placeholder="MM">
+                    <input type="text" placeholder="YYYY">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label>Mobile No</label>
+                <div class="inline small">
+                    <input type="text" value="+91">
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label>Email ID</label>
+                <input type="email">
+            </div>
+
+            <div class="form-row">
+                <label>Password</label>
+                <input type="password">
+            </div>
+
+            <div class="form-row">
+                <label>Gender</label>
+                <div class="options">
+                    <label><input type="radio" name="g"> Male</label>
+                    <label><input type="radio" name="g"> Female</label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label>Department</label>
+                <div class="options">
+                    <label><input type="checkbox"> CSE</label>
+                    <label><input type="checkbox"> IT</label>
+                    <label><input type="checkbox"> ECE</label>
+                    <label><input type="checkbox"> Civil</label>
+                    <label><input type="checkbox"> Mech</label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label>Course</label>
+                <select>
+                    <option>Select Current Course</option>
+                    <option>B.Tech</option>
+                    <option>B.Sc</option>
+                    <option>B.Com</option>
+                    <option>MBA</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label>Student Photo</label>
+                <input type="file">
+            </div>
+
+            <div class="form-row">
+                <label>City</label>
+                <input type="text">
+            </div>
+
+            <div class="form-row">
+                <label>Address</label>
+                <textarea rows="3"></textarea>
+            </div>
+
+            <div class="form-row center">
+                <button>Register</button>
+            </div>
+
+        </form>
+    </div>
+<script src="/script.js"></script>
+</body>
+</html>
