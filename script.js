@@ -1,20 +1,19 @@
-const form = document.getElementById('studentForm');
-        const modal = document.getElementById('popupModal');
-        const okBtn = document.getElementById('okBtn');
-        const registrationForm = document.getElementById('registrationForm');
-        const dashboard = document.getElementById('dashboard');
 
-        form.addEventListener('submit', function (e) {
-            e.preventDefault(); // Prevent form submission
-            modal.style.display = 'flex'; // Show popup
-        });
+const form = document.querySelector("form");
+const popup = document.getElementById("popupOverlay");
+const yesBtn = document.getElementById("popupYes");
+const noBtn = document.getElementById("popupNo");
 
-        okBtn.addEventListener('click', function () {
-            modal.style.display = 'none';
-            registrationForm.style.display = 'none'; // Hide form
-            dashboard.style.display = 'block'; // Show dashboard
-        });
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    popup.style.display = "flex";
+});
 
-        window.onclick = function (event) {
-            if (event.target == modal) { modal.style.display = "none"; }
-        }
+yesBtn.onclick = function () {
+    popup.style.display = "none";
+    form.submit();
+};
+
+noBtn.onclick = function () {
+    popup.style.display = "none";
+};
